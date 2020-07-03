@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="slide_animation.css">
+  <script language='JavaScript'>
+    var txt="===== Selamat Datang di Website Kelompok H36 =====";
+    var speed=300;
+    var refresh=null;
+    function action() { document.title=txt;
+      txt=txt.substring(1,txt.length)+ txt.charAt(0);
+      refresh=setTimeout("action()",speed);}action();
+  </script>
+</head>
+
+<body>
+
+    <!-- header -->
+    <header>
+        <div class="nav">
+            <a href="#">Home</a>
+            <a href="#">Paket Wisata</a>
+            <a href="#">Paket Suka-Suka</a>
+            <a href="#">Hubungi Kami</a>
+        </div>
+        <div class="header-title">
+            <h2>PT First Travel</h2>
+            <h3>Biro Wisata Murah & Terpercaya</h3>
+            <p>menjamin perjalanan anda menjadi lebih menyenangkan</p>
+        </div>
+    </header>
+
+    <!-- menu utama -->
+    <div class="main-content">
+      <div class="container">
+        <div class="content-left">
+            <section class="carousel" aria-label="Gallery">
+              <ol class="carousel__viewport">
+                <li id="carousel__slide1"
+                    tabindex="0"
+                    class="carousel__slide">
+                  <div class="carousel__snapper">
+                    <a href="#carousel__slide4"
+                       class="carousel__prev">Go to last slide</a>
+                    <a href="#carousel__slide2"
+                       class="carousel__next">Go to next slide</a>
+                  </div>
+                </li>
+                <li id="carousel__slide2"
+                    tabindex="0"
+                    class="carousel__slide">
+                  <div class="carousel__snapper"></div>
+                  <a href="#carousel__slide1"
+                     class="carousel__prev">Go to previous slide</a>
+                  <a href="#carousel__slide3"
+                     class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide3"
+                    tabindex="0"
+                    class="carousel__slide">
+                  <div class="carousel__snapper"></div>
+                  <a href="#carousel__slide2"
+                     class="carousel__prev">Go to previous slide</a>
+                  <a href="#carousel__slide4"
+                     class="carousel__next">Go to next slide</a>
+                </li>
+                <li id="carousel__slide4"
+                    tabindex="0"
+                    class="carousel__slide">
+                  <div class="carousel__snapper"></div>
+                  <a href="#carousel__slide3"
+                     class="carousel__prev">Go to previous slide</a>
+                  <a href="#carousel__slide1"
+                     class="carousel__next">Go to first slide</a>
+                </li>
+              </ol>
+            </section>
+        </div>
+        <div class="content-right">
+            <ul>
+                <li>Asia</li>
+                <li>Eropa</li>
+                <li>Domestik</li>
+                <li>Rohani</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+
+    <!--bagian menu tambahan-->
+    <div class="content-tambahan">
+      <div class="container">
+        <div class="header-main-tambahan">
+            <h1>Destinasi Favorit</h1>
+            <p>Nikmati wisata berbagai tempat seantero nusantara dengan harga miring</p>
+        </div>
+        <div class="wadah-kotak">
+            <div class="kotak">
+                <img class="gambar" src="Gambar/borobudur.jpg" alt="">
+                <p>Candi Borobudur</p>
+
+            </div>
+            <div class="kotak">
+                <img class="gambar" src="Gambar/bukitrimpi.jpg" alt="">
+                <p>Bukit Trimpi</p>
+
+            </div>
+            <div class="kotak">
+                <img class="gambar" src="Gambar/menara.jpg" alt="">
+                <p>Menara Kudus</p>
+
+            </div>
+            <div class="kotak">
+                <img class="gambar" src="Gambar/monas.jpg" alt="">
+                <p>Monumen Nasional</p>
+
+            </div>
+            <div class="kotak">
+                <img class="gambar" src="Gambar/parangtritis.jpg" alt="">
+                <p>Pantai Parang Tritis</p>
+
+            </div>
+            <div class="kotak">
+                <img class="gambar" src="Gambar/bunaken.jpg" alt="">
+                <p>Taman Laut Bunaken</p>
+            </div>  
+        </div>
+    </div>
+    </div>
+
+    <!--Bagian Footer-->
+    <footer>
+      <div class="container">
+        <div class="main-footer">
+          <div class="profil">
+            <h1>PT First Travel</h1>
+            <p>Jalan Pattimura, Blok B, 7</p>
+            <p>Jakarta Pusat, 123456</p>
+            <p>+021-1223344555</p>
+            <p>mail@firstravel.com</p>
+          </div>
+          <div class="list-sosmed">
+            <img src="Gambar/fb.png" height="30">
+            <img src="Gambar/twitter.png" height="30">
+            <img src="Gambar/ig.png" height="30">
+            <img src="Gambar/youtube.png" height="30p">
+          </div>
+        </div>
+      </div>
+    </footer>
+</body>
+</html>
